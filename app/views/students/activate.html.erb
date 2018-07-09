@@ -1,1 +1,5 @@
-<%=@student.active? "This student is currently active.":"This student is currently inactive"%>
+<% if @student.active %>
+  <p>"This student is currently active."</p>
+<%else%> 
+  <p>"This student is currently ianctive."</p>
+<%end%>
